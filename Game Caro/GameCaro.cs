@@ -297,6 +297,7 @@ namespace Game_Caro
 
             socket.Send(new SocketData((int)SocketCommand.SEND_MESSAGE, txt_Chat.Text, new Point()));
             Listen();
+            txt_Message.Clear();
         }
         #endregion
 
@@ -415,5 +416,120 @@ namespace Game_Caro
         #endregion
 
         #endregion
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pb_Logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Grb_About_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_About_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_PlayerName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_Avatar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txt_IP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pgb_CountDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Message_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_GameBoard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void playerToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripSeparator3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Chat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

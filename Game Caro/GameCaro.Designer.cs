@@ -91,11 +91,12 @@
             this.pn_GameBoard.AutoScroll = true;
             this.pn_GameBoard.BackColor = System.Drawing.Color.Transparent;
             this.pn_GameBoard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_GameBoard.Location = new System.Drawing.Point(11, 25);
+            this.pn_GameBoard.Location = new System.Drawing.Point(11, 39);
             this.pn_GameBoard.Margin = new System.Windows.Forms.Padding(2);
             this.pn_GameBoard.Name = "pn_GameBoard";
-            this.pn_GameBoard.Size = new System.Drawing.Size(544, 625);
+            this.pn_GameBoard.Size = new System.Drawing.Size(630, 558);
             this.pn_GameBoard.TabIndex = 0;
+            this.pn_GameBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_GameBoard_Paint);
             // 
             // panel1
             // 
@@ -107,6 +108,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 102);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pb_Logo
             // 
@@ -121,6 +123,7 @@
             this.pb_Logo.Size = new System.Drawing.Size(300, 102);
             this.pb_Logo.TabIndex = 0;
             this.pb_Logo.TabStop = false;
+            this.pb_Logo.Click += new System.EventHandler(this.pb_Logo_Click);
             // 
             // panel2
             // 
@@ -134,6 +137,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 146);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Grb_About
             // 
@@ -150,6 +154,7 @@
             this.Grb_About.TabIndex = 0;
             this.Grb_About.TabStop = false;
             this.Grb_About.Text = "About";
+            this.Grb_About.Enter += new System.EventHandler(this.Grb_About_Enter);
             // 
             // panel3
             // 
@@ -159,6 +164,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(145, 95);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // lbl_About
             // 
@@ -170,6 +176,7 @@
             this.lbl_About.Size = new System.Drawing.Size(145, 90);
             this.lbl_About.TabIndex = 4;
             this.lbl_About.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_About.Click += new System.EventHandler(this.lbl_About_Click);
             // 
             // txt_PlayerName
             // 
@@ -185,6 +192,7 @@
             this.txt_PlayerName.TabIndex = 1;
             this.txt_PlayerName.Text = "Đình Ngọc";
             this.txt_PlayerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_PlayerName.TextChanged += new System.EventHandler(this.txt_PlayerName_TextChanged);
             // 
             // pb_Avatar
             // 
@@ -197,6 +205,7 @@
             this.pb_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Avatar.TabIndex = 0;
             this.pb_Avatar.TabStop = false;
+            this.pb_Avatar.Click += new System.EventHandler(this.pb_Avatar_Click);
             // 
             // tm_About
             // 
@@ -220,6 +229,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 138);
             this.panel4.TabIndex = 1;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // txt_IP
             // 
@@ -235,6 +245,7 @@
             this.txt_IP.TabIndex = 1;
             this.txt_IP.Text = "127.0.0.1";
             this.txt_IP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_IP.TextChanged += new System.EventHandler(this.txt_IP_TextChanged);
             // 
             // btn_Undo
             // 
@@ -264,6 +275,7 @@
             this.pgb_CountDown.Name = "pgb_CountDown";
             this.pgb_CountDown.Size = new System.Drawing.Size(149, 24);
             this.pgb_CountDown.TabIndex = 2;
+            this.pgb_CountDown.Click += new System.EventHandler(this.pgb_CountDown_Click);
             // 
             // btn_Redo
             // 
@@ -312,6 +324,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(149, 70);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btn_SameCom
             // 
@@ -357,11 +370,12 @@
             // 
             this.txt_Message.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Message.Font = new System.Drawing.Font("Arial", 12F);
-            this.txt_Message.Location = new System.Drawing.Point(570, 626);
+            this.txt_Message.Location = new System.Drawing.Point(659, 574);
             this.txt_Message.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Message.Name = "txt_Message";
             this.txt_Message.Size = new System.Drawing.Size(243, 26);
             this.txt_Message.TabIndex = 4;
+            this.txt_Message.TextChanged += new System.EventHandler(this.txt_Message_TextChanged);
             // 
             // btn_Send
             // 
@@ -373,7 +387,7 @@
             this.btn_Send.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Send.Font = new System.Drawing.Font("Arial", 10.5F, System.Drawing.FontStyle.Bold);
             this.btn_Send.ForeColor = System.Drawing.Color.White;
-            this.btn_Send.Location = new System.Drawing.Point(817, 626);
+            this.btn_Send.Location = new System.Drawing.Point(906, 573);
             this.btn_Send.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Send.Name = "btn_Send";
             this.btn_Send.Size = new System.Drawing.Size(53, 24);
@@ -396,6 +410,7 @@
             this.menuStrip.Size = new System.Drawing.Size(884, 24);
             this.menuStrip.TabIndex = 5;
             this.menuStrip.Text = "menuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // menuToolStripMenuItem
             // 
@@ -409,6 +424,7 @@
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // newGameToolStripMenuItem
             // 
@@ -438,6 +454,7 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(172, 6);
+            this.toolStripSeparator1.Click += new System.EventHandler(this.toolStripSeparator1_Click);
             // 
             // quitToolStripMenuItem
             // 
@@ -458,6 +475,7 @@
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // playerToolStripMenuItem2
             // 
@@ -467,6 +485,7 @@
             this.playerToolStripMenuItem2.Name = "playerToolStripMenuItem2";
             this.playerToolStripMenuItem2.Size = new System.Drawing.Size(120, 22);
             this.playerToolStripMenuItem2.Text = "2 Players";
+            this.playerToolStripMenuItem2.Click += new System.EventHandler(this.playerToolStripMenuItem2_Click);
             // 
             // ViaLANToolStripMenuItem
             // 
@@ -493,6 +512,8 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(117, 6);
+            this.toolStripSeparator2.Click += new System.EventHandler(this.toolStripSeparator2_Click);
+
             // 
             // settingsToolStripMenuItem
             // 
@@ -512,6 +533,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // howToPlayToolStripMenuItem
             // 
@@ -532,6 +554,7 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(159, 6);
+            this.toolStripSeparator3.Click += new System.EventHandler(this.toolStripSeparator3_Click);
             // 
             // aboutThisGameToolStripMenuItem
             // 
@@ -547,15 +570,16 @@
             this.txt_Chat.BackColor = System.Drawing.Color.White;
             this.txt_Chat.Font = new System.Drawing.Font("Arial", 11F);
             this.txt_Chat.ForeColor = System.Drawing.Color.DarkBlue;
-            this.txt_Chat.Location = new System.Drawing.Point(569, 443);
+            this.txt_Chat.Location = new System.Drawing.Point(658, 443);
             this.txt_Chat.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Chat.Multiline = true;
             this.txt_Chat.Name = "txt_Chat";
             this.txt_Chat.ReadOnly = true;
             this.txt_Chat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_Chat.Size = new System.Drawing.Size(301, 179);
+            this.txt_Chat.Size = new System.Drawing.Size(301, 126);
             this.txt_Chat.TabIndex = 4;
             this.txt_Chat.Text = "- Player 1: ";
+            this.txt_Chat.TextChanged += new System.EventHandler(this.txt_Chat_TextChanged);
             // 
             // GameCaro
             // 

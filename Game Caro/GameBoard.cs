@@ -462,7 +462,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt từ trên xuống
+            // Duyệt từ trên xuống
             for (int Count = 1; Count < 6 && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol].BackgroundImage == ListPlayers[0].Symbol)
@@ -476,7 +476,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt từ dưới lên
+            // Duyệt từ dưới lên
             for (int Count = 1; Count < 6 && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol].BackgroundImage == ListPlayers[0].Symbol)
@@ -493,8 +493,8 @@ namespace Game_Caro
             if (ManCells == 2)
                 return 0;
 
-            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
-            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
+            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
+            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
 
             TotalScore -= ArrDefenseScore[ManCells + 1];
             TotalScore += ArrAttackScore[ComCells];
@@ -508,7 +508,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt từ trái sang phải
+            // Duyệt từ trái sang phải
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols; Count++)
             {
                 if (MatrixPositions[CurrRow][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -522,7 +522,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt từ phải sang trái
+            // Duyệt từ phải sang trái
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -539,8 +539,8 @@ namespace Game_Caro
             if (ManCells == 2)
                 return 0;
 
-            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
-            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
+            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
+            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
 
             TotalScore -= ArrDefenseScore[ManCells + 1];
             TotalScore += ArrAttackScore[ComCells];
@@ -554,7 +554,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt trái trên
+            // Duyệt trái trên
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -568,7 +568,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt phải dưới
+            // Duyệt phải dưới
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0 && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -585,8 +585,8 @@ namespace Game_Caro
             if (ManCells == 2)
                 return 0;
 
-            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
-            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
+            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
+            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
 
             TotalScore -= ArrDefenseScore[ManCells + 1];
             TotalScore += ArrAttackScore[ComCells];
@@ -600,7 +600,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt phải trên
+            // Duyệt phải trên
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -614,7 +614,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt trái dưới
+            // Duyệt trái dưới
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0 && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -631,8 +631,8 @@ namespace Game_Caro
             if (ManCells == 2)
                 return 0;
 
-            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
-            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
+            /* Nếu ManCells == 1 => bị chặn 1 đầu => lấy điểm phòng ngự tại vị trí này nhưng 
+            nên cộng thêm 1 để tăng phòng ngự cho máy cảnh giác hơn vì đã bị chặn 1 đầu */
 
             TotalScore -= ArrDefenseScore[ManCells + 1];
             TotalScore += ArrAttackScore[ComCells];
@@ -648,7 +648,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt từ trên xuống
+            // Duyệt từ trên xuống
             for (int Count = 1; Count < 6 && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol].BackgroundImage == ListPlayers[0].Symbol)
@@ -662,7 +662,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt từ dưới lên
+            // Duyệt từ dưới lên
             for (int Count = 1; Count < 6 && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol].BackgroundImage == ListPlayers[0].Symbol)
@@ -690,7 +690,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt từ trái sang phải
+            // Duyệt từ trái sang phải
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols; Count++)
             {
                 if (MatrixPositions[CurrRow][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -704,7 +704,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt từ phải sang trái
+            // Duyệt từ phải sang trái
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -732,7 +732,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt trái trên
+            // Duyệt trái trên
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -746,7 +746,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt phải dưới
+            // Duyệt phải dưới
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0 && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -774,7 +774,7 @@ namespace Game_Caro
             int ComCells = 0;
             int ManCells = 0;
 
-            // Duyệt phải trên
+            // Duyệt phải trên
             for (int Count = 1; Count < 6 && CurrCol + Count < Constance.nCols && CurrRow - Count >= 0; Count++)
             {
                 if (MatrixPositions[CurrRow - Count][CurrCol + Count].BackgroundImage == ListPlayers[0].Symbol)
@@ -788,7 +788,7 @@ namespace Game_Caro
                     break;
             }
 
-            // Duyệt trái dưới
+            // Duyệt trái dưới
             for (int Count = 1; Count < 6 && CurrCol - Count >= 0 && CurrRow + Count < Constance.nRows; Count++)
             {
                 if (MatrixPositions[CurrRow + Count][CurrCol - Count].BackgroundImage == ListPlayers[0].Symbol)
