@@ -94,7 +94,7 @@
             this.pn_GameBoard.Location = new System.Drawing.Point(11, 39);
             this.pn_GameBoard.Margin = new System.Windows.Forms.Padding(2);
             this.pn_GameBoard.Name = "pn_GameBoard";
-            this.pn_GameBoard.Size = new System.Drawing.Size(630, 558);
+            this.pn_GameBoard.Size = new System.Drawing.Size(692, 597);
             this.pn_GameBoard.TabIndex = 0;
             this.pn_GameBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_GameBoard_Paint);
             // 
@@ -103,7 +103,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.pb_Logo);
-            this.panel1.Location = new System.Drawing.Point(570, 41);
+            this.panel1.Location = new System.Drawing.Point(707, 41);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 102);
@@ -132,7 +132,7 @@
             this.panel2.Controls.Add(this.Grb_About);
             this.panel2.Controls.Add(this.txt_PlayerName);
             this.panel2.Controls.Add(this.pb_Avatar);
-            this.panel2.Location = new System.Drawing.Point(570, 149);
+            this.panel2.Location = new System.Drawing.Point(707, 149);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 146);
@@ -224,7 +224,7 @@
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.btn_SameCom);
             this.panel4.Controls.Add(this.btn_LAN);
-            this.panel4.Location = new System.Drawing.Point(570, 301);
+            this.panel4.Location = new System.Drawing.Point(707, 301);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(300, 138);
@@ -370,7 +370,7 @@
             // 
             this.txt_Message.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Message.Font = new System.Drawing.Font("Arial", 12F);
-            this.txt_Message.Location = new System.Drawing.Point(659, 574);
+            this.txt_Message.Location = new System.Drawing.Point(709, 612);
             this.txt_Message.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Message.Name = "txt_Message";
             this.txt_Message.Size = new System.Drawing.Size(243, 26);
@@ -387,7 +387,7 @@
             this.btn_Send.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Send.Font = new System.Drawing.Font("Arial", 10.5F, System.Drawing.FontStyle.Bold);
             this.btn_Send.ForeColor = System.Drawing.Color.White;
-            this.btn_Send.Location = new System.Drawing.Point(906, 573);
+            this.btn_Send.Location = new System.Drawing.Point(954, 612);
             this.btn_Send.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Send.Name = "btn_Send";
             this.btn_Send.Size = new System.Drawing.Size(53, 24);
@@ -407,7 +407,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(884, 24);
+            this.menuStrip.Size = new System.Drawing.Size(1021, 24);
             this.menuStrip.TabIndex = 5;
             this.menuStrip.Text = "menuStrip";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
@@ -513,7 +513,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(117, 6);
             this.toolStripSeparator2.Click += new System.EventHandler(this.toolStripSeparator2_Click);
-
             // 
             // settingsToolStripMenuItem
             // 
@@ -570,13 +569,13 @@
             this.txt_Chat.BackColor = System.Drawing.Color.White;
             this.txt_Chat.Font = new System.Drawing.Font("Arial", 11F);
             this.txt_Chat.ForeColor = System.Drawing.Color.DarkBlue;
-            this.txt_Chat.Location = new System.Drawing.Point(658, 443);
+            this.txt_Chat.Location = new System.Drawing.Point(706, 443);
             this.txt_Chat.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Chat.Multiline = true;
             this.txt_Chat.Name = "txt_Chat";
             this.txt_Chat.ReadOnly = true;
             this.txt_Chat.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_Chat.Size = new System.Drawing.Size(301, 126);
+            this.txt_Chat.Size = new System.Drawing.Size(301, 154);
             this.txt_Chat.TabIndex = 4;
             this.txt_Chat.Text = "- Player 1: ";
             this.txt_Chat.TextChanged += new System.EventHandler(this.txt_Chat_TextChanged);
@@ -588,7 +587,7 @@
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImage = global::Game_Caro.Properties.Resources.back2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 661);
+            this.ClientSize = new System.Drawing.Size(1021, 661);
             this.Controls.Add(this.txt_Chat);
             this.Controls.Add(this.txt_Message);
             this.Controls.Add(this.panel4);
